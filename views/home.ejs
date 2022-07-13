@@ -1,4 +1,15 @@
 <%- include('partials/header'); -%>
-<h1>home</h1>
-<p><%= startingContent %></p>
-<%- include('partials/footer'); -%>
+    <h1>home</h1>
+    <p>
+        <%= startingContent %>
+    </p>
+    <% console.log(posts) %>
+
+    <% posts.foreach(function(post){ %>
+       <% console.log(post.title); %>
+    <% }); %>
+
+        <%- include('partials/footer'); -%>
+
+
+        
